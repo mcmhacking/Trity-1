@@ -16,11 +16,11 @@ header = """
                  ||     ||
 """
 
-print header
-print "\033[1;36mOperating Systems Available:\033[1;36m "
-print "\n--------------------------"
-print "(1) Kali Linux / Ubuntu / Raspbian"
-print "--------------------------\n"
+print (header)
+print ("\033[1;36mOperating Systems Available:\033[1;36m ")
+print ("\n--------------------------")
+print ("(1) Kali Linux / Ubuntu / Raspbian")
+print ("--------------------------\n")
 
 option = raw_input("\033[0m[>] Select Operating System: \033[0m")
 
@@ -45,7 +45,7 @@ if option == "1":
     os.system('apt-get install sendemail')
     os.system('apt-get install libncurses5')
     pip.main(["install", "scapy", "pythonwhois", "BeautifulSoup", "requests", "mechanize", "google", "qrcode"])
-    print "\033[1;32m[!] Finished Installing! Run 'trity' to run program [!]\033[0m"
+    print ("\033[1;32m[!] Finished Installing! Run 'trity' to run program [!]\033[0m")
     sys.exit()
 else:
-    print "Whoops! Something went wrong!"
+    print ("Whoops! Something went wrong!")
